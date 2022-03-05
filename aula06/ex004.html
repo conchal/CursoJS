@@ -5,8 +5,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projeto JS</title>
+  <style>
+    body {
+      background-color: black;
+      font: normal 14pt Arial;    }
+    h2, h3, h4 {
+      color: chartreuse;
+    }
+  </style>
 </head>
 <body>
-  
+  <script>
+    var nome = window.prompt('Qual é o seu nome?')
+    document.write(`<h2>Olá ${nome}! Seu nome tem ${nome.length} letras! </h2><br>`)
+    document.write(`<h3>Seu nome em maíusculas é ${nome.toUpperCase()}!</h3><br>`)
+    document.write(`<h4>Seu nome em minúsculas é ${nome.toLowerCase()}!</h4>`)
+  </script>
 </body>
 </html>
