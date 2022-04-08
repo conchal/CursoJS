@@ -19,13 +19,20 @@
   <h1>Iniciando estudo com DOM</h1>
   <p>Aqui vai o resultado</p>
   <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
-  <div>Clique em mim</div>
+  <div id="msg">Clique em mim</div>
   <br>
   <br>
   <script>
+    /* ESTUDO POR MARCA getElementsByTagName() */
     var corpo = window.document.body
     var p1 = window.document.getElementsByTagName('p')[1]
     window.document.write('Está escrito assim: ' + p1.innerHTML)
+
+    /* ESTUDO POR MARCA getElementsById() */
+    var d = window.document.getElementById('msg')
+    d.style.background = 'black'
+    d.innerText = 'Estou aguardando...' /* modificar texto */
+    window.document.getElementById('msg').innerText = 'Olá' /* dessa forma modifica o texto também */
 
   </script>
 </body>
