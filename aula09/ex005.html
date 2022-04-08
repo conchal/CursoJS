@@ -17,6 +17,7 @@
 
 <body>
   <h1>Iniciando estudo com DOM</h1>
+  <h1 class="sub">Testes e práticas</h1>
   <p>Aqui vai o resultado</p>
   <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
   <div id="msg">Clique em mim</div>
@@ -24,15 +25,28 @@
   <br>
   <script>
     /* ESTUDO POR MARCA getElementsByTagName() */
-    var corpo = window.document.body
     var p1 = window.document.getElementsByTagName('p')[1]
     window.document.write('Está escrito assim: ' + p1.innerHTML)
 
-    /* ESTUDO POR MARCA getElementsById() */
+    /* ESTUDO POR ID getElementsById() */
     var d = window.document.getElementById('msg')
     d.style.background = 'black'
-    d.innerText = 'Estou aguardando...' /* modificar texto */
+    /*/* EXEMPLO DE MODIFICAR TEXTO
+    d.innerText = 'Estou aguardando...' /* modificar texto //
     window.document.getElementById('msg').innerText = 'Olá' /* dessa forma modifica o texto também */
+
+    /* ESTUDO POR NOME getElementsByName() */
+    var p1 = window.document.getElementsByTagName('p')[0]
+    window.document.write('Está escrito assim: ' + p1.innerHTML)
+
+    /* ESTUDO POR CLASSE getElementsByName() */
+    var x = window.document.getElementsByClassName('sub')[0]
+    x.style.color = 'black'
+
+    /* ESTUDO POR SELETOR querySelector() ou querySelectorAll() */
+    var d = window.document.querySelector('div#msg')
+    d.style.color = 'red'
+
 
   </script>
 </body>
