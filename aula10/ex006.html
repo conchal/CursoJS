@@ -10,8 +10,8 @@
 <style>
   div#area {
     font: normal 20pt arial;
+    color: wheat;
     background-color: goldenrod;
-    color: black;
     width: 200px;
     height: 200px;
     line-height: 200px;
@@ -20,9 +20,26 @@
 </style>
 
 <body>
-  <div id="area">
-    interaja...
+  <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+    Interaja...
   </div>
+
+  <script>
+
+    var ar = window.document.getElementById('area')
+
+    function clicar() {
+      ar.innerText = ('Clicou!')
+      ar.style.background = 'red'
+    }
+    function entrar() {
+      ar.innerText = ('Entrou!')
+    }
+    function sair() {
+      ar.innerText = ('Saiu!')
+      ar.style.background = 'green'
+    }
+  </script>
 </body>
 
 </html>
