@@ -11,16 +11,22 @@
 <body>
   <h1>Semáfaro</h1>
   Estado do Semáfaro: <input type="text" name="estsem" id="estsem">
-  <input type="button" value="Verificar" onclick="verificar()">
-  <div id="est">
+  <input type="button" value="Verificar" onclick="calcular()">
+  <div id="estado">
+
   </div>
 
   <script>
-    function verificar() {
+    function calcular() {
       var ests = window.document.querySelector('input#estsem')
-      var est = window.document.querySelector('input#est')
+      var est = window.document.querySelector('div#estado')
+
 
       est.innerHTML = `<p>Atenção Semáfaro!</p>`
+
+      if (ests = "Verde") {
+        est.innerHTML += `<p>Semáfaro: ${ests}! <strong>Prossiga pela via!</strong></p>`
+      }
     }
   </script>
 </body>
