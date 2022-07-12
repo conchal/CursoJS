@@ -9,7 +9,20 @@
 </head>
 
 <body>
+  <h1>Semáfaro</h1>
+  Estado do Semáfaro: <input type="text" name="estsem" id="estsem">
+  <input type="button" value="Verificar" onclick="verificar()">
+  <div id="est">
+  </div>
 
+  <script>
+    function verificar() {
+      var ests = window.document.querySelector('input#estsem')
+      var est = window.document.querySelector('input#est')
+
+      est.innerHTML = `<p>Atenção Semáfaro!</p>`
+    }
+  </script>
 </body>
 
 </html>
