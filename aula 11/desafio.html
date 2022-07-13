@@ -19,18 +19,17 @@
   <script>
     function verificar() {
       var ests = window.document.querySelector('input#estsem')
-      var est = window.document.querySelector('div#estado')
+      var sem = window.document.querySelector('div#estado')
 
       ests.innerHTML = `<p>Atenção Semáfaro, ${est}!</p>`
 
       if (ests == 'Verde') {
-        est.innerHTML += `<p><strong>Prossiga pela via!</strong></p>`
+        sem.innerHTML += `<p><strong>Prossiga pela via!</strong></p>`
       }
 
       else {
-        est.innerHTML += `<p><strong>Pare!</strong></p>`
+        sem.innerHTML += `<p><strong>Pare!</strong></p>`
       }
-
 
     }
   </script>
