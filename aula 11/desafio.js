@@ -1,7 +1,7 @@
 var sem = 'Vermelho'
 
 console.log(`Semáfaro está: ${sem}`)
-if (sem == 'Verde') // Condição Simples!
+if (sem == 'Verde')
 {
   console.log(`PROSSIGA!`)
 }

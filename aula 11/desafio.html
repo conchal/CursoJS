@@ -20,10 +20,11 @@
     function verificar() {
       var ests = window.document.querySelector('input#estsem')
       var sem = window.document.querySelector('div#estado')
+      var semaf = (ests.value)
 
-      ests.innerHTML = `<p>Atenção Semáfaro, ${est}!</p>`
+      sem.innerHTML = `<p>Atenção Semáfaro, ${semaf}!</p>`
 
-      if (ests == 'Verde') {
+      if (semaf == 'Verde') {
         sem.innerHTML += `<p><strong>Prossiga pela via!</strong></p>`
       }
 
