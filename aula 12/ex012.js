@@ -1,4 +1,4 @@
-var hora = 12
+var hora = 4
 
 console.log(`Agora são exatamente ${hora} horas.`)
 
@@ -8,6 +8,11 @@ if (hora < 12) {
 else if (hora <= 18) {
   console.log(`Boa tarde!`)
 }
+
+else if (hora === 4){
+  console.log(`Boa Madruga!`)
+}
+
 else (
   console.log(`Boa noite!`)
 )
