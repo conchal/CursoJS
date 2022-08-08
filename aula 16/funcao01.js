@@ -8,3 +8,7 @@ function parimpar(n) {
 
 let res = parimpar (11)
 console.log(res)
+
+// ou
+
+console.log(parimpar(4))
